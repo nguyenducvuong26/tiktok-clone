@@ -68,14 +68,35 @@
     line-height: 2.2rem;
 }
 
-@media (max-width: 464px) {
+@media (max-width: 767px) {
     .avatar {
-        width: 76px;
-        height: 76px;
+        width: 86px;
+        height: 86px;
+        margin-right: 16px;
     }
     .username {
         font-size: 2.5rem;
-        line-height: 2.5rem;
+        line-height: 3rem;
+    }
+
+    .count {
+        margin-right: 8px;
+    }
+}
+
+@media (max-width: 464px) {
+    .avatar {
+        width: 56px;
+        height: 56px;
+        margin-right: 12px;
+    }
+    .username {
+        font-size: 1.6rem;
+        line-height: 2rem;
+    }
+
+    .count {
+        margin-right: 8px;
     }
 
     .count strong {
