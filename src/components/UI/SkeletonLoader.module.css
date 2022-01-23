@@ -1,0 +1,62 @@
+.skeleton-loader {
+    display: flex;
+    align-items: center;
+    padding: 8px;
+}
+
+.avatar-loader {
+    position: relative;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: #ddd;
+    margin-right: 12px;
+    overflow: hidden;
+}
+
+.name-loader {
+    position: relative;
+    width: 120px;
+    height: 16px;
+    border-radius: 12px;
+    background: rgb(224, 224, 224);
+    overflow: hidden;
+}
+
+.avatar-loader::before,
+.name-loader::before {
+    display: block;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to right, transparent, #fff 50%, transparent);
+    animation: skeletonLoading 2s ease infinite alternate;
+}
+
+.name-loader::before {
+    border-radius: 12px;
+}
+
+@keyframes skeletonLoading {
+    0% {
+        left: -50%;
+    }
+    100% {
+        left: 50%;
+    }
+}
+
+@media (max-width: 1071px) {
+    .skeleton-loader {
+        display: block;
+    }
+    .name-loader {
+        display: none;
+    }
+}

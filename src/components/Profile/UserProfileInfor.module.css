@@ -1,0 +1,90 @@
+.user-infor {
+    margin-bottom: 20px;
+}
+
+.user {
+    display: flex;
+}
+
+.avatar {
+    width: 116px;
+    height: 116px;
+    margin-right: 20px;
+}
+
+.avatar img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.sub-infor {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.username {
+    font-weight: 700;
+    font-size: 3.2rem;
+    line-height: 3.8rem;
+}
+
+.follow-btn button {
+    min-width: 208px;
+    min-height: 36px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(254, 44, 85);
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.follow-btn button:hover {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.06), rgba(0, 0, 0, 0.06)),
+        rgb(254, 44, 85);
+}
+
+.count-infor {
+    display: flex;
+    margin-top: 22px;
+    color: rgba(18, 18, 18, 0.75);
+}
+
+.count {
+    margin-right: 20px;
+}
+
+.count strong {
+    font-weight: 600;
+    font-size: 1.8rem;
+    line-height: 2.5rem;
+    margin-right: 6px;
+}
+
+.count span {
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 2.2rem;
+}
+
+@media (max-width: 464px) {
+    .avatar {
+        width: 76px;
+        height: 76px;
+    }
+    .username {
+        font-size: 2.5rem;
+        line-height: 2.5rem;
+    }
+
+    .count strong {
+        font-size: 1.6rem;
+        line-height: 2.2rem;
+    }
+
+    .count span {
+        font-size: 1.4rem;
+        line-height: 2rem;
+    }
+}

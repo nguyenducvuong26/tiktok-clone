@@ -1,0 +1,93 @@
+.video-container {
+    position: relative;
+    flex: 1 1 896px;
+    width: 100%;
+    padding: 20px 0;
+    background-color: rgba(12, 13, 15, 0.9);
+}
+
+.video {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+}
+
+.video video {
+    width: 100%;
+    height: 100%;
+}
+
+.modal-btn {
+    color: #fff;
+    font-size: 2.4rem;
+    background: rgba(255, 255, 255, 0.12);
+    padding: 8px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.modal-btn:hover {
+    opacity: 0.7;
+}
+
+.volume {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    display: flex;
+}
+
+.close-btn {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 10000;
+}
+
+.volume input {
+    position: absolute;
+    top: -56px;
+    width: 8rem;
+    left: -20px;
+    height: 0.4rem;
+    transform: rotate(-90deg);
+    border-radius: 4px;
+    background: #d3d3d3;
+    -webkit-appearance: none;
+    display: none;
+}
+
+.volume input::after {
+    content: "";
+    position: absolute;
+    left: -24px;
+    bottom: -8px;
+    display: block;
+    width: 28px;
+    height: 20px;
+    background: transparent;
+}
+
+.volume input::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: #fff;
+    cursor: pointer;
+}
+
+.volume:hover input {
+    display: block;
+}
+
+.video-play {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    font-size: 9rem;
+    color: #fff;
+}

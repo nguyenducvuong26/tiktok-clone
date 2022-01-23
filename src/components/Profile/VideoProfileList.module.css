@@ -1,0 +1,18 @@
+.video-section-title {
+    width: 230px;
+    height: 44px;
+    color: rgb(18, 18, 18);
+    text-align: center;
+    border-bottom: 2px solid #000;
+}
+
+.video-section-title p {
+    font-size: 1.8rem;
+    line-height: 4.4rem;
+    font-weight: 600;
+    color: #121212;
+}
+
+.video-list {
+    margin-top: 8px;
+}

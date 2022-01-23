@@ -1,0 +1,167 @@
+.container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    width: 100vw;
+    height: 100%;
+    background: #fff;
+    z-index: 9999;
+}
+
+.infor {
+    flex: 0 0 544px;
+    padding-top: 32px;
+    display: flex;
+    flex-direction: column;
+    width: 544px;
+}
+
+.user {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 22px 32px 15px;
+}
+
+.user-infor {
+    display: flex;
+}
+
+.avatar {
+    width: 40px;
+    height: 40px;
+    margin-right: 12px;
+}
+
+.avatar a {
+    width: 100%;
+    height: 100%;
+}
+
+.avatar img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.username {
+    font-size: 1.8rem;
+    line-height: 2.2rem;
+    font-weight: 600;
+    color: #161823;
+}
+
+.username:hover {
+    text-decoration: underline;
+}
+
+.create-time {
+    color: #161823;
+    font-size: 1.4rem;
+    line-height: 2rem;
+    font-weight: 400;
+}
+
+.follow-btn {
+    margin-top: 8px;
+}
+
+.follow-btn button {
+    min-width: 88px;
+    min-height: 34px;
+    font-weight: 600;
+    padding: 0px 10px;
+}
+
+.follow-btn button:hover {
+    background: rgba(254, 44, 85, 0.06);
+}
+
+.setting {
+    position: relative;
+    padding: 10px;
+    font-size: 2.4rem;
+}
+
+.setting:hover .delete-wrapper {
+    display: block;
+}
+
+.delete-wrapper {
+    position: absolute;
+    right: 0;
+    min-width: 180px;
+    padding: 8px 16px;
+    border-radius: 8px;
+    box-shadow: rgb(0 0 0 / 12%) 0px 4px 16px;
+    display: none;
+}
+
+.delete {
+    font-size: 1.6rem;
+    line-height: 2.2rem;
+    font-weight: 600;
+    padding: 6px 12px;
+}
+
+.delete:hover {
+    color: rgb(254, 44, 85);
+    cursor: pointer;
+}
+
+.caption {
+    padding: 0 32px;
+    font-size: 1.6rem;
+    line-height: 2.2rem;
+}
+
+.actions {
+    display: flex;
+    padding: 16px 32px;
+}
+
+.action {
+    display: flex;
+    align-items: center;
+}
+
+.action span {
+    margin-right: 20px;
+    color: rgba(22, 24, 35, 0.75);
+    font-size: 1.2rem;
+    line-height: 1.7rem;
+    font-weight: 600;
+}
+
+.action-icon {
+    font-size: 2rem;
+    padding: 8px;
+    margin-right: 6px;
+    background-color: rgba(22, 24, 35, 0.06);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.liked {
+    color: rgb(254, 44, 85);
+}
+
+.comment-section {
+    width: 100%;
+    padding: 24px 32px;
+    box-sizing: border-box;
+    background-color: rgb(248, 248, 248);
+    border-top: 1px solid rgba(18, 18, 18, 0.12);
+    border-bottom: 1px solid rgba(18, 18, 18, 0.12);
+    overflow: hidden auto;
+    flex-grow: 1;
+}
+
+.comment-form {
+    background-color: rgb(255, 255, 255);
+    margin: 0px 32px;
+    padding: 21px 0px;
+}

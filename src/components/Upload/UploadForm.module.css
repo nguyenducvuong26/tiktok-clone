@@ -1,0 +1,90 @@
+.form-layout {
+    background-color: rgb(248, 248, 248);
+}
+
+.form-wrapper {
+    margin: 0px auto;
+    width: 1100px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    background-color: rgb(248, 248, 248);
+}
+
+.upload {
+    width: 1100px;
+    box-shadow: rgb(0 0 0 / 6%) 0px 2px 8px;
+    border-radius: 8px;
+    background-color: rgb(255, 255, 255);
+    padding: 24px 56px;
+}
+
+.header h2 {
+    font-size: 2.4rem;
+    line-height: 3.2rem;
+    font-weight: bold;
+    color: rgb(22, 24, 35);
+}
+
+.header p {
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 2.4rem;
+    color: rgb(138, 139, 145);
+    margin-top: 2px;
+}
+
+.main-form {
+    margin: 24px 0 44px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.preview {
+    width: 260px;
+    height: 458px;
+    border: 2px dashed rgba(22, 24, 35, 0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.preview-background {
+    background-color: #222;
+}
+
+.preview img {
+    width: 40px;
+    height: 29px;
+}
+
+.preview p {
+    font-size: 1.8rem;
+    line-height: 2.5rem;
+    font-weight: 600;
+    color: rgb(22, 24, 35);
+    margin: 24px 0;
+}
+
+input[type="file"]::-webkit-file-upload-button {
+    height: 36px;
+    min-width: 120px;
+    padding: 6px 8px;
+    font-weight: 600;
+    font-size: 1.6rem;
+    line-height: 22px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(254, 44, 85);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+input[type="file"]::-webkit-file-upload-button:hover {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.06), rgba(0, 0, 0, 0.06)),
+        rgb(254, 44, 85);
+}
+
+input[type="file"] {
+    margin-top: 16px;
+}

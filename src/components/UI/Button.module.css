@@ -1,0 +1,10 @@
+.default {
+    outline: none;
+    background: #fff;
+    border: 1px solid #fe2c55;
+    color: #fe2c55;
+    border-radius: 4px;
+    font-size: 1.6rem;
+    line-height: 2.2rem;
+    cursor: pointer;
+}

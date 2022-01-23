@@ -1,0 +1,83 @@
+.backdrop {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 9999;
+}
+
+.modal {
+    position: fixed;
+    top: 20vh;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 99999;
+    overflow: hidden;
+}
+
+.close {
+    height: 48px;
+    padding: 0 20px;
+    font-size: 24px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.close img {
+    background: rgba(22, 24, 35, 0.06);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.close img:hover {
+    background: rgba(22, 24, 35, 0.1);
+}
+
+.main-section {
+    padding: 0 48px 52px;
+}
+
+.modal-header h2 {
+    font-size: 2.4rem;
+    line-height: 32px;
+    text-align: center;
+    font-weight: bolder;
+    margin: 0 32px;
+}
+
+.body {
+    margin-top: 32px;
+}
+
+.sign-in-method {
+    display: flex;
+    margin-bottom: 12px;
+    border: 1px solid rgba(22, 24, 35, 0.12);
+    cursor: pointer;
+}
+
+.icon {
+    width: 44px;
+    height: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right: 1px solid rgba(22, 24, 35, 0.12);
+}
+
+.icon img {
+    width: 24px;
+}
+
+.text {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    color: #161823;
+    font-weight: 600;
+}

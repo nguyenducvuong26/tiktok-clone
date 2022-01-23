@@ -1,0 +1,109 @@
+.comment-wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 16px;
+}
+
+.comment {
+    display: flex;
+}
+
+.avatar {
+    width: 40px;
+    height: 40px;
+    margin-right: 12px;
+}
+
+.avatar a {
+    width: 100%;
+    height: 100%;
+}
+
+.avatar img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.username-wrapper {
+    line-height: 2.2rem;
+    font-weight: 700;
+    color: #161823;
+    margin-bottom: 4px;
+}
+
+.username {
+    font-size: 1.8rem;
+    margin-right: 4px;
+}
+
+.username:hover {
+    text-decoration: underline;
+}
+
+.username-helper {
+    font-size: 1.6rem;
+    margin-left: 4px;
+    color: rgb(254, 44, 85);
+}
+
+.content {
+    font-size: 1.6rem;
+    line-height: 2.2rem;
+    color: #161823;
+    margin-bottom: 6px;
+}
+
+.sub-content span {
+    color: rgba(22, 24, 35, 0.5);
+    font-size: 1.4rem;
+    line-height: 2rem;
+    font-weight: 400;
+    margin-right: 24px;
+}
+
+.reply-btn {
+    cursor: pointer;
+}
+
+.setting {
+    position: relative;
+    padding: 0 10px 10px;
+    font-size: 2.4rem;
+    opacity: 0;
+}
+
+.setting:hover {
+    opacity: 1;
+}
+
+.setting:hover .delete-wrapper {
+    display: block;
+    cursor: pointer;
+}
+
+.delete-wrapper {
+    position: absolute;
+    right: 0;
+    min-width: 180px;
+    padding: 8px 16px;
+    border-radius: 8px;
+    box-shadow: rgb(0 0 0 / 12%) 0px 4px 16px;
+    display: none;
+}
+
+.delete {
+    font-size: 1.6rem;
+    line-height: 2.2rem;
+    font-weight: 600;
+    padding: 6px 12px;
+}
+
+.delete:hover {
+    color: rgb(254, 44, 85);
+    cursor: pointer;
+}
+
+.reply {
+    padding-left: 52px;
+}

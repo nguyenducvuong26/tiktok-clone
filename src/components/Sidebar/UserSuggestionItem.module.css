@@ -1,0 +1,57 @@
+.account {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 8px;
+    cursor: pointer;
+}
+
+.account:hover {
+    background: rgba(22, 24, 35, 0.03);
+}
+
+.avatar {
+    width: 32px;
+    height: 32px;
+    margin-right: 12px;
+}
+
+.avatar img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+/* tool tip */
+
+.user-tooltip-custom {
+    left: -6px !important;
+    top: 52px !important;
+}
+
+.user-tooltip-custom button {
+    color: #fff;
+    background-color: rgb(254, 44, 85);
+}
+
+.user-tooltip-custom button:hover {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.06), rgba(0, 0, 0, 0.06)),
+        rgb(254, 44, 85) !important;
+}
+
+@media (max-width: 1071px) {
+    .account {
+        justify-content: center;
+    }
+    .avatar {
+        margin: 0;
+    }
+
+    .username {
+        display: none;
+    }
+
+    .user-tooltip-custom {
+        display: none;
+    }
+}

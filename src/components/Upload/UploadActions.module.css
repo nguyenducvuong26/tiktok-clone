@@ -1,0 +1,64 @@
+.actions {
+    width: 100%;
+    margin-left: 36px;
+}
+
+.actions label {
+    display: block;
+    font-weight: 600;
+    font-size: 1.6rem;
+    line-height: 2.2rem;
+    margin-bottom: 10px;
+}
+
+.actions input {
+    width: 100%;
+    font-size: 1.6rem;
+    padding: 12px;
+    border: 1px solid rgba(22, 24, 35, 0.12);
+    outline: none;
+    border-radius: 4px;
+}
+
+.buttons {
+    margin-top: 44px;
+}
+
+.buttons .btn {
+    min-width: 164px;
+    height: 46px;
+    font-weight: 600;
+    padding: 6px 8px;
+    border-color: rgba(22, 24, 35, 0.12);
+}
+
+.btn:last-child {
+    margin-left: 20px;
+}
+
+.btn:first-child {
+    color: rgb(22, 24, 35);
+}
+
+.active:hover {
+    background: rgba(22, 24, 35, 0.03);
+    border: 1px solid rgba(22, 24, 35, 0.2);
+}
+
+.disable {
+    cursor: not-allowed;
+    color: rgba(22, 24, 35, 0.34) !important;
+    background: rgba(22, 24, 35, 0.06);
+    border: none;
+}
+
+.submit {
+    background-color: rgb(254, 44, 85);
+    color: rgb(255, 255, 255) !important;
+}
+
+.submit:hover {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.06), rgba(0, 0, 0, 0.06)),
+        rgb(254, 44, 85);
+    border: none;
+}

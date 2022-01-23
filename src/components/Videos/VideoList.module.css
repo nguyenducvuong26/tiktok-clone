@@ -1,0 +1,16 @@
+.spacing {
+    margin-right: 356px;
+}
+
+.video-list {
+    padding: 24px 0;
+    margin: 0 16px;
+    width: 692px;
+    max-width: 692px;
+}
+
+@media (max-width: 1071px) {
+    .spacing {
+        margin-right: 72px;
+    }
+}

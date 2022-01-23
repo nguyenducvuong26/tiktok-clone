@@ -1,0 +1,10 @@
+.spacing {
+    width: 356px;
+}
+
+.following-video-container {
+    padding: 24px 0;
+    margin: 0 16px;
+    width: 692px;
+    max-width: 692px;
+}

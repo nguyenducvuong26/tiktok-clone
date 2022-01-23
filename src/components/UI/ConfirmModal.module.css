@@ -1,0 +1,45 @@
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.85);
+    z-index: 9999;
+}
+
+.navigate-modal {
+    position: absolute;
+    max-width: 310px;
+    top: 35vh;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #fff;
+    z-index: 99999;
+}
+
+.header {
+    padding: 32px 32px 24px;
+    text-align: center;
+}
+
+.message {
+    font-size: 2rem;
+    line-height: 2.4rem;
+    font-weight: 600;
+    color: rgb(22, 24, 35);
+}
+
+.button {
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+    text-align: center;
+    padding: 16.5px 16px 17px;
+    border-top: 1px solid rgba(22, 24, 35, 0.12);
+    cursor: pointer;
+}
+
+.danger {
+    font-weight: 600;
+    color: rgb(254, 44, 85);
+}

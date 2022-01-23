@@ -1,0 +1,15 @@
+.spacing {
+    margin-right: 356px;
+}
+
+.profile-container {
+    padding: 32px 24px;
+    width: 692px;
+    max-width: 692px;
+}
+
+@media (max-width: 1071px) {
+    .spacing {
+        margin-right: 72px;
+    }
+}
