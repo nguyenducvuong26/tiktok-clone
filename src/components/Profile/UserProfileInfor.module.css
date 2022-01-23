@@ -29,6 +29,9 @@
     font-weight: 700;
     font-size: 3.2rem;
     line-height: 3.8rem;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
 }
 
 .follow-btn button {
