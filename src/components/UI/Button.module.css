@@ -8,3 +8,9 @@
     line-height: 2.2rem;
     cursor: pointer;
 }
+
+@media (max-width: 464px) {
+    .default {
+        font-size: 1.4rem;
+    }
+}
