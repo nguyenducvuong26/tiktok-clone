@@ -39,7 +39,7 @@
     min-height: 36px;
     color: rgb(255, 255, 255);
     background-color: rgb(254, 44, 85);
-    font-size: 18px;
+    font-size: 1.8rem;
     font-weight: 600;
 }
 
@@ -110,5 +110,11 @@
     .count span {
         font-size: 1.4rem;
         line-height: 2rem;
+    }
+
+    .follow-btn button {
+        min-width: 128px;
+        min-height: 28px;
+        font-size: 1.6rem;
     }
 }
