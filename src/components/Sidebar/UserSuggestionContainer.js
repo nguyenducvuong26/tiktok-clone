@@ -71,7 +71,7 @@ function UserSuggestionContainer() {
             )}
             {suggestedUsers.length === 0 && (
                 <p className={classes["empty-hint"]}>
-                    Những tài khoản bạn follow sẽ xuất hiện tại đây.
+                    Không có tài khoàn nào được đề xuất.
                 </p>
             )}
         </div>

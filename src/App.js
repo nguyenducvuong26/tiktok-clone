@@ -123,11 +123,9 @@ function App() {
                     {uid && (
                         <Route path="/following" element={<FollowingPage />} />
                     )}
-                    {uid && (
-                        <Route path="/users">
-                            <Route path=":userId" element={<ProfilePage />} />
-                        </Route>
-                    )}
+                    <Route path="/users">
+                        <Route path=":userId" element={<ProfilePage />} />
+                    </Route>
                     {uid && <Route path="/live" element={<LivePage />} />}
                     {uid && <Route path="/upload" element={<UploadPage />} />}
                     {uid && <Route path="/message" element={<MessagePage />} />}
