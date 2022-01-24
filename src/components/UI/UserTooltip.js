@@ -48,7 +48,7 @@ function UserTooltip(props) {
                     >
                         <Button
                             className={classes["tooltip-button"]}
-                            onClick={props.toggleFollowHandler}
+                            onClick={(e) => props.toggleFollowHandler(e)}
                         >
                             {props.following.includes(props.uid)
                                 ? "Đang Follow"

@@ -15,7 +15,10 @@ export default function useFollow({
     const [follow, setFollow] = useState(null);
     const dispatch = useDispatch();
 
-    const toggleFollowHandler = () => {
+    const toggleFollowHandler = (e) => {
+        if (e) {
+            e.stopPropagation();
+        }
         if (!followUid) {
             dispatch(uiActions.openLoginModal());
         } else {
