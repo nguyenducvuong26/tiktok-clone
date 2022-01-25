@@ -1,6 +1,6 @@
 export const formatDate = (seconds) => {
     let formattedDate = "";
-    const currentTime = Math.floor(new Date().getTime() / 1000);
+    const currentTime = Math.ceil(new Date().getTime() / 1000);
     if (!seconds) {
         formattedDate = "1 phút trước";
         return formattedDate;
