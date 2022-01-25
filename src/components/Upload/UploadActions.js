@@ -2,17 +2,19 @@ import React, { useState } from "react";
 import classes from "./UploadActions.module.css";
 import Button from "../UI/Button";
 import ConfirmModal from "../UI/ConfirmModal";
+import ProgressLoaderModal from "../UI/ProgressLoaderModal";
 
 function UploadActions(props) {
     const [caption, setCaption] = useState("");
     const [showConfirmModal, setShowConfirmModal] = useState(false);
+    const [progress, setProgress] = useState(0);
 
     const captionChangeHandler = (e) => {
         setCaption(e.target.value);
     };
 
     const videoUploadHandler = () => {
-        props.videoUpload(caption, setCaption);
+        props.videoUpload(caption, setCaption, setProgress);
     };
 
     const openConfirmModalHandler = () => {
@@ -41,6 +43,7 @@ function UploadActions(props) {
                     onCancel={closeConfirmModalHandler}
                 />
             )}
+            {!!progress && <ProgressLoaderModal value={progress} />}
             <div className={classes.actions}>
                 <div className={classes.caption}>
                     <label>Chú thích</label>

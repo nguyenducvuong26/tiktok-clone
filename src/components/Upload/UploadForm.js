@@ -12,6 +12,7 @@ import NavigateModal from "../UI/NavigateModal";
 
 function UploadForm() {
     const [showNavigateModal, setShowNavigateModal] = useState(false);
+
     const { displayName, uid, photoURL, id } = useSelector(
         (state) => state.auth
     );
@@ -26,7 +27,11 @@ function UploadForm() {
         setVideoFile(e.target.files[0]);
     };
 
-    const videoUploadHandler = (caption, setCaptionCallback) => {
+    const videoUploadHandler = (
+        caption,
+        setCaptionCallback,
+        setProgressCallback
+    ) => {
         if (!caption) {
             return;
         }
@@ -49,7 +54,7 @@ function UploadForm() {
                 // Get task progress, including the number of bytes uploaded and the total number of bytes to be uploaded
                 const progress =
                     (snapshot.bytesTransferred / snapshot.totalBytes) * 100;
-                console.log("Upload is " + progress + " % done");
+                setProgressCallback(progress);
             },
             (error) => {
                 console.log(error);
@@ -73,6 +78,7 @@ function UploadForm() {
                         setVideoFile(null);
                         setCaptionCallback("");
                         setShowNavigateModal(true);
+                        setProgressCallback(0);
                     });
             }
         );
@@ -83,6 +89,7 @@ function UploadForm() {
             {showNavigateModal && (
                 <NavigateModal closeModal={closeNavigateModalHandler} />
             )}
+
             <div className={classes["form-layout"]}>
                 <div className={classes["form-wrapper"]}>
                     <Card className={classes.upload}>
