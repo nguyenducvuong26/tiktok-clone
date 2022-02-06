@@ -10,6 +10,7 @@
 }
 
 .avatar {
+    flex-shrink: 0;
     width: 56px;
     height: 56px;
     margin-right: 12px;
@@ -54,7 +55,7 @@
     cursor: pointer;
 }
 
-.caption {
+.caption-wrapper {
     display: flex;
     margin-top: 4px;
     font-size: 1.6rem;
@@ -62,7 +63,7 @@
     color: rgb(18, 18, 18);
 }
 
-.username-container .caption {
+.username-container .caption-wrapper {
     max-width: 300px;
     overflow: hidden;
 }
@@ -85,7 +86,7 @@
 }
 
 @media (max-width: 464px) {
-    .username-container .caption {
+    .caption {
         max-width: 150px;
         text-overflow: ellipsis;
         overflow: hidden;
@@ -103,26 +104,14 @@
         overflow: hidden;
         white-space: nowrap;
     }
-
-    .caption {
-        text-overflow: ellipsis;
-        overflow: hidden;
-        white-space: nowrap;
-    }
 }
 
 @media (max-width: 414px) {
     .username-container .caption {
         max-width: 100px;
-        text-overflow: ellipsis;
-        overflow: hidden;
-        white-space: nowrap;
     }
 
     .username {
         max-width: 100px;
-        text-overflow: ellipsis;
-        overflow: hidden;
-        white-space: nowrap;
     }
 }

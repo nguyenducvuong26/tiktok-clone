@@ -46,8 +46,8 @@ function VideoInfor(props, ref) {
                             <span>(Bạn)</span>
                         ) : null}
                     </div>
-                    <div className={classes.caption}>
-                        <p>{props.caption}</p>
+                    <div className={classes["caption-wrapper"]}>
+                        <p className={classes.caption}>{props.caption}</p>
                     </div>
                 </div>
                 {props.uid !== props.currentUid && (

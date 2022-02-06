@@ -53,6 +53,10 @@
 }
 
 @media (max-width: 1071px) {
+    .avatar-loader {
+        margin-left: 4px;
+    }
+
     .skeleton-loader {
         display: block;
     }

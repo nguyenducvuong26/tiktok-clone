@@ -15,7 +15,7 @@ export const formatDate = (seconds) => {
     } else if (86400 <= calculateTime && calculateTime < 604800) {
         formattedDate = `${Math.floor(calculateTime / 86400)} ngày trước`;
     } else {
-        formattedDate = new Date(seconds * 1000);
+        formattedDate = new Date(seconds * 1000).toISOString().split("T")[0];
     }
 
     return formattedDate;
