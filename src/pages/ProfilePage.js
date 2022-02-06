@@ -3,13 +3,15 @@ import { getSingleDocument } from "../firebase/service";
 import { getDocs, where, query, collection, orderBy } from "firebase/firestore";
 import { db } from "../firebase/config";
 import classes from "../App.module.css";
-import { useParams } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
 import { formatDate } from "../utilities/formatDate";
+import NotFoundPage from "./NotFoundPage";
 import SideBar from "../components/Sidebar/SideBar";
 import Profile from "../components/Profile/Profile";
 
 function ProfilePage() {
     const { userId } = useParams();
+    const navigate = useNavigate();
     const [user, setUser] = useState(null);
     const [videos, setVideos] = useState(null);
 
@@ -40,22 +42,29 @@ function ProfilePage() {
     useEffect(() => {
         async function getUserInformation() {
             const userInfor = await getSingleDocument("users", userId);
-            setUser({
-                ...userInfor,
-                createdAt: formatDate(userInfor.createdAt.seconds),
-            });
+            if (userInfor) {
+                setUser({
+                    ...userInfor,
+                    createdAt: formatDate(userInfor.createdAt.seconds),
+                });
+            }
         }
 
         getUserInformation();
-    }, [userId]);
+    }, [userId, navigate]);
 
     return (
-        <div className={classes["main-body"]}>
-            <div className={classes["main-body-helper"]}>
-                <SideBar />
-                {user && <Profile user={user} videos={videos} />}
-            </div>
-        </div>
+        <React.Fragment>
+            {!user && <NotFoundPage />}
+            {user && (
+                <div className={classes["main-body"]}>
+                    <div className={classes["main-body-helper"]}>
+                        <SideBar />
+                        {user && <Profile user={user} videos={videos} />}
+                    </div>
+                </div>
+            )}
+        </React.Fragment>
     );
 }
 

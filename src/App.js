@@ -13,11 +13,10 @@ import Header from "./components/Header/Header.js";
 import LoginModal from "./components/Login/LoginModal.js";
 import HomePage from "./pages/HomePage";
 import FollowingPage from "./pages/FollowingPage";
-import LivePage from "./pages/LivePage";
 import UploadPage from "./pages/UploadPage";
-import MessagePage from "./pages/MessagePage";
 import DetailPage from "./pages/DetailPage";
 import ProfilePage from "./pages/ProfilePage";
+import NotFoundPage from "./pages/NotFoundPage";
 
 function App() {
     const dispatch = useDispatch();
@@ -126,10 +125,15 @@ function App() {
                     <Route path="/users">
                         <Route path=":userId" element={<ProfilePage />} />
                     </Route>
-                    {uid && <Route path="/live" element={<LivePage />} />}
+                    {uid && <Route path="/live" element={<NotFoundPage />} />}
                     {uid && <Route path="/upload" element={<UploadPage />} />}
-                    {uid && <Route path="/message" element={<MessagePage />} />}
-                    <Route path="*" element={<Navigate to="/" />} />
+                    {uid && (
+                        <Route path="/message" element={<NotFoundPage />} />
+                    )}
+                    <Route
+                        path="*"
+                        element={<Navigate to="/" replace={true} />}
+                    />
                 </Routes>
             </Layout>
         </div>
