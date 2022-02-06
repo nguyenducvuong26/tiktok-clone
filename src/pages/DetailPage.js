@@ -60,7 +60,6 @@ function DetailPage() {
     useEffect(() => {
         async function getVideo() {
             let video = await getSingleDocument("videos", videoId);
-            console.log(video);
             video = {
                 ...video,
                 createdAt: formatDate(video.createdAt.seconds),
