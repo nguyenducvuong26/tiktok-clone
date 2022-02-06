@@ -1,0 +1,43 @@
+.container {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.container h1 {
+    color: transparent;
+    font-size: 7rem;
+    line-height: 7rem;
+    background-image: linear-gradient(
+        -45deg,
+        #ca6074,
+        #cf405a,
+        #d83755,
+        #fe2c55,
+        #cf2e4c,
+        #cf3b56,
+        #d3546c
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    display: inline-block;
+}
+
+.container h2 {
+    color: transparent;
+    font-size: 4rem;
+    line-height: 4.5rem;
+    background-image: linear-gradient(
+        -45deg,
+        #b44055,
+        #ca3651,
+        #da2d4d,
+        #fe2c52,
+        #dd3151,
+        #c73b54,
+        #b8485c
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    display: inline-block;
+    margin-left: 10px;
+}
