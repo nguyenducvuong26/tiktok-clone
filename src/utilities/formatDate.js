@@ -6,6 +6,7 @@ export const formatDate = (seconds) => {
         return formattedDate;
     }
     const calculateTime = currentTime - seconds;
+
     if (calculateTime < 60) {
         formattedDate = `${calculateTime} giây trước`;
     } else if (60 <= calculateTime && calculateTime < 3600) {
