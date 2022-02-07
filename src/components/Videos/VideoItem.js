@@ -144,6 +144,7 @@ function VideoItem(props) {
                         type="video/mp4"
                         muted={muted}
                         loop
+                        playsInline
                     >
                         <source src={props.videoURL} />
                     </video>

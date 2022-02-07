@@ -57,6 +57,7 @@ function Video(props) {
                     autoPlay
                     muted={muted}
                     loop
+                    playsInline
                 />
                 <div
                     className={classes["video-play"]}
